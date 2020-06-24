@@ -2,9 +2,13 @@ $(document).ready(function() {
     var today = moment().format('dddd, MMMM Do');
     var currentHour = moment().format('ha');
     var pageHours = $('.hour');
-    var hourText = $('.description');
+    var hourText = $('textarea');
+
+    $('#currentDay').text(today);
 
     for (i=0; i < pageHours.length; i++) {
+        $(hourText[i]).val(localStorage.getItem(i + 'events'));
+        
         if (currentHour.toUpperCase() === $(pageHours[i]).text()) {
             $(hourText[i]).addClass('present');
             var index = i;
@@ -22,5 +26,15 @@ $(document).ready(function() {
         }
     }
 
-    $('#currentDay').text(today);
+    $('.saveBtn').on('click', function() {
+        event.preventDefault();
+
+        var eventText = $(this).siblings('.description').val();
+        var grownUp = $(this).parent().attr('id');
+
+        localStorage.setItem(grownUp + 'events', eventText);
+
+        var storedText = localStorage.getItem(grownUp + 'events');
+        $(this).siblings('.description').html(storedText);
+    });
 });

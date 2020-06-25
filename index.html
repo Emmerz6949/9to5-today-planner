@@ -4,80 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--linking to Bootstap-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <!--linking to Font Awesome-->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <!--linking to google fonts-->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!--linking to the style.css file-->
     <link rel="stylesheet" href="style.css" />
+    <!--title as it appears in the tab-->
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
+    <!--header containing the h1 heading and paragraph the user sees at the 
+      top of the page, as well as an empty paragraph that the script.js file dynamically adds text to-->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+
+    <!--div with the class container to hold the timeblocks-->
     <div class="container">
       <!-- Timeblocks go here -->
+
+      <!--the 9am timeblock-->
       <div class="row time-block" id="0">
         <div class="hour col-md-1">9AM</div>
         <textarea class="description col-md-10"></textarea>
-        <div class="saveBtn col-md-1" type="submit"><i class="fas fa-save"></i></div>
+        <div class="saveBtn col-md-1"><i class="fas fa-save"></i></div>
       </div>
 
+      <!--the 10am timeblock-->
       <div class="row time-block" id="1">
         <div class="hour col-md-1">10AM</div>
         <textarea class="description col-md-10"></textarea>
         <div class="saveBtn col-md-1"><i class="fas fa-save"></i></div>
       </div>
 
+      <!--the 11am timeblock-->
       <div class="row time-block" id="2">
         <div class="hour col-md-1">11AM</div>
         <textarea class="description col-md-10"></textarea>
         <div class="saveBtn col-md-1"><i class="fas fa-save"></i></div>
       </div>
 
+      <!--the 12pm timeblock-->
       <div class="row time-block" id="3">
         <div class="hour col-md-1">12PM</div>
         <textarea class="description col-md-10"></textarea>
         <div class="saveBtn col-md-1"><i class="fas fa-save"></i></div>
       </div>
 
+      <!--the 1pm timeblock-->
       <div class="row time-block" id="4">
         <div class="hour col-md-1">1PM</div>
         <textarea class="description col-md-10"></textarea>
         <div class="saveBtn col-md-1"><i class="fas fa-save"></i></div>
       </div>
 
+      <!--the 2pm timeblock-->
       <div class="row time-block" id="5">
         <div class="hour col-md-1">2PM</div>
         <textarea class="description col-md-10"></textarea>
         <div class="saveBtn col-md-1"><i class="fas fa-save"></i></div>
       </div>
 
+      <!--the 3pm timeblock-->
       <div class="row time-block" id="6">
         <div class="hour col-md-1">3PM</div>
         <textarea class="description col-md-10"></textarea>
         <div class="saveBtn col-md-1"><i class="fas fa-save"></i></div>
       </div>
 
+      <!--the 4pm timeblock-->
       <div class="row time-block" id="7">
         <div class="hour col-md-1">4PM</div>
         <textarea class="description col-md-10"></textarea>
         <div class="saveBtn col-md-1"><i class="fas fa-save"></i></div>
       </div>
 
+      <!--last but not least, the 5pm timeblock-->
       <div class="row time-block" id="8">
         <div class="hour col-md-1">5PM</div>
         <textarea class="description col-md-10"></textarea>
@@ -85,8 +104,11 @@
       </div>
     </div>
 
+    <!--linking to jQuery-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--linking to Moment.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!--linking to script.js file-->
     <script src="script.js"></script>
   </body>
 </html>

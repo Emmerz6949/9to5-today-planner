@@ -1,9 +1,11 @@
+/*styles everything in the body*/
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
+/*styles all textarea elements*/
 textarea{
   background: transparent;
   border: none;
@@ -13,6 +15,7 @@ textarea{
   padding: 10px;
 }
 
+/*styles a textarea when it's being focused on*/
 textarea:focus{
   border:1px solid #80bdff;
   border-radius:.25rem;
@@ -20,6 +23,7 @@ textarea:focus{
   box-shadow:0 0 0 .2rem rgba(0,123,255,.25)
 }
 
+/*styles all elements with the class jumbotron*/
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -28,42 +32,50 @@ textarea:focus{
   border-bottom: 10px solid black;
 }
 
+/*styles all elements with the class description*/
 .description{
   white-space: pre-wrap;
 }
 
+/*styles all elements with the class time-block*/
 .time-block{
   text-align: center;
   border-radius: 15px;
 }
 
+/*styles all elements with the class row*/
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
 }
 
+/*styles all elements with the class hour*/
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
+/*styles all elements with the class past*/
 .past {
   background-color: #d3d3d3;
   color: black;
 }
 
+/*styles all elements with the class present*/
 .present {
   background-color: #ff6961;
   color: black;
 }
 
+/*styles all elements with the class future*/
 .future {
   background-color: #77dd77;
   color: black;
 }
 
+/*styles all elements with the class saveBtn*/
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -73,6 +85,7 @@ textarea:focus{
   padding-top: 30px;
 }
 
+/*styles an element with the class saveBtn when it's being hovered over*/
 .saveBtn:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;

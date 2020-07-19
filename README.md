@@ -4,6 +4,8 @@
 
 This repository was created to add more html elements to the pre-existing files as well as a script.js file that utilizes jQuery and Moment.js to create a day planner for the current day between the standard workday hours of 9AM and 5PM.
 
+![image](https://i.ibb.co/gzX0CJB/Work-Day-Scheduler.png)
+
 You can use the commits to follow my journey.
 
 
